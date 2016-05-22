@@ -10,7 +10,7 @@ def list2str(list):
     string = ''
     for i in list:
         string += str(i) + ', '
-    newString = rreplace(string, ',', '', len(list) - 2)
+    newString = rreplace(string, ',', '', len(list) - 3)
     return newString
 
 print(list2str(spam))
