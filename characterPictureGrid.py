@@ -9,10 +9,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
 
-for row in grid:
-    for j in i:
-        print (j, end='')
-    #print(end='')
-
-print('\n')
-print(grid[0][0])
+for i in zip(*grid):
+    for el in i:
+        print(el, end='')
+    print(end='\n')
